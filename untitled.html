@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style type="text/css">
+		canvas{
+			background: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="myCanvas" height="500" width="500" style="border: 1px solid #F11F22;display: block;margin: 50px,auto;">你的浏览器不支持 Canvas.</canvas>
+	<script type="text/javascript">
+	  function drawtriangle(){
+		  var c=document.getElementById("myCanvas");
+		  var ctx=c.getContext("2D");
+		  ctx.strokeStyle = "red";
+		  ctx.fillStyle = "red";
+		  ctx.lineWidth = 10;
+		  ctx.beginPath();
+		  ctx.moveTo(0,0);
+		  ctx.lineTo(150,300);
+		  ctx.stroke();
+		  
+	  }
+		window.addEventListener("load",drawtriangle,true);
+	</script>
+</body>
+</html>
